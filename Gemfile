@@ -33,6 +33,8 @@ gem 'bootstrap-sass'
 gem 'rspec-rails'
 gem "slim"
 gem 'autoprefixer-rails'
+gem 'carrierwave'
+gem 'carrierwave-aws'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

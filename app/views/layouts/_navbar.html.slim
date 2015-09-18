@@ -4,4 +4,9 @@ nav class="navbar navbar-inverse navbar-fixed-top"
       =link_to 'My Sports', root_path, class: "root_link"
     div id="navbar" class="navbar-collapse collapse"
       form class="navbar-form navbar-right"
-        =link_to ' Sign in', new_user_session_path, class: "btn btn-success"
+        -if user_signed_in? 
+          =link_to 'User', current_user, class: "btn btn-success margin5"
+          =link_to 'Log Out', destroy_session_path(:user), method: :delete, class: "btn btn-success margin5"
+        -else
+          =link_to 'Sign in', new_user_session_path, class: "btn btn-success margin5"
+          =link_to 'Sign up', new_user_registration_path, class: "btn btn-success margin5"
