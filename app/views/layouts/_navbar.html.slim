@@ -1,0 +1,7 @@
+nav class="navbar navbar-inverse navbar-fixed-top"
+  .navbar-content
+    .navbar-header
+      =link_to 'My Sports', root_path, class: "root_link"
+    div id="navbar" class="navbar-collapse collapse"
+      form class="navbar-form navbar-right"
+        =link_to ' Sign in', new_user_session_path, class: "btn btn-success"

@@ -31,6 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'rspec-rails'
+gem "slim"
+gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

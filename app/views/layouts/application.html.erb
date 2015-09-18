@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>MySports</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
 
-	<%= yield %>
+<body>
+
+	<div class="nav">
+		<%= render "layouts/navbar" %>
+	</div>
+
+	<div class="content">
+		<p class="notice"><%= notice %><%= alert %></p>
+		<%= yield %>
+	</div>
+
+	<div class="footer">
+		<%= render "layouts/footer" %>
+	</div>
 
 </body>
+
 </html>
