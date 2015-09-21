@@ -30,6 +30,15 @@ html{
 }
 
 body {
+  background-color:#556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   position: relative;
   margin: 0;
   padding-bottom: 200px;
@@ -40,11 +49,26 @@ body {
 .content{
   margin-left: 8%;
   margin-right: 8%;
-  padding-bottom: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+  background-color: #fff; 
+  background-image: 
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  box-shadow: 0 5px 20px 10px rgb(50,50,50);
 }
 
 .navbar{
   position: static;
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  box-shadow: 0 0 20px 5px rgb(10,10,10);
 }
 
 .navbar-content{
@@ -79,15 +103,29 @@ body {
 
 .root_link{
   text-decoration: none;
-  font-size: 26px;
+  font-size: 30px;
   color: rgb(220,220,220);
   &:hover{
     text-decoration: none;
-    font-size: 27px;
-    color: rgb(180,180,180);
+    font-size: 30px;
+    color: rgb(160,160,160);
   }
 }
 
 .margin5{
   margin: 5px;
+}
+
+.centered{
+  text-align: center;
+}
+
+.container{
+  text-align: center;
+}
+
+.label{
+  font-size: 18px;
+  font-family: sans-serif;
+  color: rgb(70,70,70);
 }
