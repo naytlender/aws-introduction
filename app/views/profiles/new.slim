@@ -1,0 +1,26 @@
+div class="panel panel-default"
+  .panel-heading New profile
+  .panel-body
+    .margin-left-15
+    = form_for @profile do |p|
+      = p.label :first_name, "First name:", class: "label-field"
+      = p.text_field :first_name, class: "form-field"
+      br
+      = p.label :second_name, "Second name:", class: "label-field"
+      = p.text_field :second_name, class: "form-field"
+      br
+      = p.label :gender, "Gender:", class: "label-field"
+      = p.text_field :gender, class: "form-field"
+      br
+      = p.label :birthday, "Birthday:", class: "label-field"
+      = p.date_field :birthday, class: "form-field"
+      br
+      = p.label :height, "Height:", class: "label-field"
+      = p.number_field :height, class: "form-field", in: 30..240
+      br
+      = p.label :weight, "Weight:", class: "label-field"
+      = p.number_field :weight, class: "form-field", in: 30..500
+      br
+      = p.label :avatar, "Avatar:", class: "label-field"
+      = p.file_field :avatar, class: "form-field"
+      = p.submit 'Create profile', class: "btn btn-success"
