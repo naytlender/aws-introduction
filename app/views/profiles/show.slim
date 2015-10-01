@@ -4,9 +4,8 @@ div class="panel panel-default"
     .margin-left-15
       h4 
         | Avatar:
-        = image_tag('https://s3-eu-central-1.amazonaws.com/kpi-my-sports/' + @profile.avatar_url[30, 1000])
         br
-        = @profile.avatar
+        = image_tag('https://s3-eu-central-1.amazonaws.com/kpi-my-sports/' + @profile.avatar_url[30, 1000])
       br
       h4 
         | First name: 
