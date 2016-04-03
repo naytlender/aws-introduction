@@ -1,5 +1,6 @@
-div class="panel panel-default"
-  .panel-heading New profile
+div class="panel panel-default container"
+  .panel-heading 
+    h2 Step 2 -> New profile
   .panel-body
     .margin-left-15
     = form_for @profile do |p|
@@ -22,5 +23,5 @@ div class="panel panel-default"
       = p.number_field :weight, class: "form-field", in: 30..500
       br
       = p.label :avatar, "Avatar:", class: "label-field"
-      = p.file_field :avatar, class: "form-field"
+      = p.file_field :avatar, class: ""
       = p.submit 'Create profile', class: "btn btn-success"

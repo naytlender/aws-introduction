@@ -1,27 +1,23 @@
 div class="panel panel-default"
   .panel-heading My profile
   .panel-body
-    .margin-left-15
-      h4 
-        | Avatar:
-        br
-        = image_tag('https://s3-eu-central-1.amazonaws.com/kpi-my-sports/' + @profile.avatar_url[30, 1000])
-      br
-      h4 
-        | First name: 
-        = @profile.first_name
-      h4 
-        | Second name: 
-        = @profile.second_name
-      h4 
-        | Gender: 
-        = @profile.gender
-      h4 
-        | Date birth: 
-        = @profile.birthday
-      h4 
-        | Height: 
-        = @profile.height
-      h4 
-        | Weight:
-        = @profile.weight
+    .row
+      .col-md-3
+        .margin-left-15
+          h3 
+            = @profile.first_name
+            = ' ' + @profile.second_name
+          = image_tag('https://s3-eu-central-1.amazonaws.com/kpi-my-sports/' + @profile.avatar_url[30, 1000], class: "avatar")
+          br
+          h4 
+            | Gender: 
+            = @profile.gender
+          h4 
+            | Date birth: 
+            = @profile.birthday
+          h4 
+            | Height: 
+            = @profile.height
+          h4 
+            | Weight: 
+            = @profile.weight
