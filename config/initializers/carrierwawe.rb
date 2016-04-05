@@ -17,12 +17,9 @@ CarrierWave.configure do |config|
   }
 
   config.aws_credentials = {
-    # access_key_id:     ENV.fetch('AWS_ACCESS_KEY_ID'),
-    access_key_id:     'AKIAJ6NKI2CB4WQCO32A',
-    secret_access_key: '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',
-    # secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-    region:            'eu-central-1'
-    # region:            ENV.fetch('AWS_REGION')
+    access_key_id:     ENV.fetch('AWS_ACCESS_KEY_ID'),
+    secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+    region:            ENV.fetch('AWS_REGION')
   }
 
   # Optional: Signing of download urls, e.g. for serving private
